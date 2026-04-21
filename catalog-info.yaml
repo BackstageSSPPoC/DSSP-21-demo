@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: DSSP-21-demo
+  description: Service DSSP-21-demo
+
+  annotations:
+    github.com/project-slug: BackstageSSPPoC/DSSP-21-demo
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-21-demo/main
+    argocd/app-name: dssp-21-demo
+    backstage.io/kubernetes-id: DSSP-21-demo
+    backstage.io/kubernetes-namespace: default
+
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
